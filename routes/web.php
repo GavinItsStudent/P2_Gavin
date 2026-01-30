@@ -6,8 +6,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// Route::get('/', function () {
+//     return view('Auth.SignIn');
+// });
+
 Route::get('/', function () {
-    return view('Auth.SignIn');
+    return view('Layout.Content');
 });
 
 Route::get('/Sign-up', function () {
@@ -21,3 +25,12 @@ Route::get('/Forgot-Password', function () {
 Route::get('/404-Error', function () {
     return view('Error.404');
 });
+
+Route::get('/Form', function () {
+    return view('NavSideBar.Form');
+});
+
+Route::get('/Dashboard', function () {
+    return view('Layout.Content');
+});
+
